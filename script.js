@@ -12,5 +12,43 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 il testo digitato viene letto e utilizzato per creare un nuovo todo, 
 che quindi viene aggiunto alla lista dei todo esistenti.
 */
+const {createApp} = Vue;
+
+let check = true;
+
+const app = createApp({
+    data(){
+        return{
+            let lista: [
+                {
+                    testo: 'jumpin jack',
+                    check: false, 
+                }           
+                {
+                    testo: 'plank',
+                    check: false,
+                }
+                {
+                    testo: 'burpees',
+                    check: false,
+                }
+                {
+                    testo: 'mountain climber',
+                    check: false,
+                }
+                {
+                    testo: 'crunch',
+                    check: false,
+                }
+                ];
+
+
+        }
+
+    } console.log(lista);
+
+    
+})
+
 
 
