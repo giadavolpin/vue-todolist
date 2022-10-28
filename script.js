@@ -41,21 +41,23 @@ const app = createApp({
                     done: false,
                 },
                 ],
-
-
             },
-
         },
-
         methods:{
             addTask(){
-                if(this.)
+                if(this.newtask.lenght >= 3 ){
+                    this.lista.unshift(this.newtask);
+                    this.hasError = false;
+                } else {
+                    this.hasError = true;
+                }
+                this.newtask = '';
             }
         }
-
-    
 });
 
-mounted()
+mounted(){
+    console.log('in mounted')
+}
 
 

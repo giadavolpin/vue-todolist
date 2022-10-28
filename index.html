@@ -38,12 +38,13 @@
     </header>
     <main>
         <div id="app"></div>
-        <h6>Aggiungi esercizio</h6>
-        <input type="text">
+        
+        <input type="text" v-model="newtask">
+        <button @click="addTask">Aggiungi</button>
         <ul>
-            <li v-for="(testo, index) in lista" 
+            <li v-for="(text, index) in lista" 
             :key="index">
-            <p>{{lista.testo[0]}}</p>
+            <p>{{text.testo[index]}}</p>
             </li>
             <button>Cancella</button>
         </ul>
