@@ -12,9 +12,9 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 il testo digitato viene letto e utilizzato per creare un nuovo todo, 
 che quindi viene aggiunto alla lista dei todo esistenti.
 */
-const {createApp} = Vue;
-
-let check = true;
+/* const {createApp} = Vue; */
+import {createApp} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+let done = true;
 
 const app = createApp({
     data(){
@@ -22,34 +22,40 @@ const app = createApp({
                 lista: [
                 {
                     testo: 'jumpin jack',
-                    check: false, 
+                    done: false, 
                 },           
                 {
                     testo: 'plank',
-                    check: false,
+                    done: false,
                 },
                 {
                     testo: 'burpees',
-                    check: false,
+                    done: false,
                 },
                 {
                     testo: 'mountain climber',
-                    check: false,
+                    done: false,
                 },
                 {
                     testo: 'crunch',
-                    check: false,
+                    done: false,
                 },
                 ],
 
 
             },
 
-        }, console.log(lista)
+        },
+
+        methods:{
+            addTask(){
+                if(this.)
+            }
+        }
 
     
 });
 
-
+mounted()
 
 
