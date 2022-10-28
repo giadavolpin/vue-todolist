@@ -18,37 +18,38 @@ let check = true;
 
 const app = createApp({
     data(){
-        return{
-            let lista: [
+            return{
+                lista: [
                 {
                     testo: 'jumpin jack',
                     check: false, 
-                }           
+                },           
                 {
                     testo: 'plank',
                     check: false,
-                }
+                },
                 {
                     testo: 'burpees',
                     check: false,
-                }
+                },
                 {
                     testo: 'mountain climber',
                     check: false,
-                }
+                },
                 {
                     testo: 'crunch',
                     check: false,
-                }
-                ];
+                },
+                ],
 
 
-        }
+            },
 
-    } console.log(lista);
+        }, console.log(lista)
 
     
-})
+});
+
 
 
 
