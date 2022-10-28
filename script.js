@@ -40,8 +40,8 @@ const app = createApp({
                     testo: 'crunch',
                     done: false,
                 },
-                ],
-            },
+                ]
+            }
         },
         methods:{
             addTask(){
@@ -56,8 +56,8 @@ const app = createApp({
         }
 });
 
-mounted(){
+/* mounted(){
     console.log('in mounted')
-}
+} */
 
 
