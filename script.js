@@ -19,6 +19,7 @@ let done = true;
 const app = createApp({
     data(){
             return{
+                esercizio: '',
                 lista: [
                 {  //todo
                     testo: 'jumpin jack',
@@ -45,13 +46,13 @@ const app = createApp({
         },
         methods:{
             addTask(){
-                if(this.newtask.lenght >= 3 ){
-                    this.lista.unshift(this.newtask);
+                if(this.esercizio.lenght >= 3 ){
+                    this.esercizio.unshift(this.esercizio);
                     this.hasError = false;
                 } else {
                     this.hasError = true;
                 }
-                this.newtask = '';
+                this.esercizio = '';
             }
         }
 });
