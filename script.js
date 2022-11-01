@@ -20,6 +20,7 @@ const app = createApp({
     data(){
             return{
                 esercizio: '',
+                hasError: false, 
                 lista: [
                 {  //todo
                     testo: 'jumpin jack',
@@ -47,13 +48,16 @@ const app = createApp({
         methods:{
             addTask(){
                 if(this.esercizio.lenght >= 3 ){
-                    this.esercizio.unshift(this.esercizio);
+                    this.lista.unshift(this.esercizio);
                     this.hasError = false;
                 } else {
                     this.hasError = true;
                 }
-                this.esercizio = '';
+                this.esercizio = ''; //serve per tenere pulito 
             }
         }
 });
 app.mount("#app");
+
+
+

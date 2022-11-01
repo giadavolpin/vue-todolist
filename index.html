@@ -39,14 +39,17 @@
     </header>
     <main>
         <div id="app">
-            <input type="text" v-model="esercizio">
-            <button @click="addTask">Aggiungi</button>
+            <div>
+                <input type="text" v-model="esercizio">
+                <button @click="addTask">Aggiungi</button>
+                <div v-if="hasError">Il task deve essere di almeno 3 caratteri</div> <!-- non si vedrà subito xk è falsa -->
+            </div>
             <ul>
                 <li v-for="(text, index) in lista" 
                 :key="index">
-                <p>{{text.testo}}</p>
+                  <span>{{text.testo}}</span> <!-- mi prende il testo della lista -->
+                  <button>Cancella</button>
                 </li>
-                <button>Fatto</button>
             </ul>
         </div>
     </main>
