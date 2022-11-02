@@ -47,8 +47,8 @@ const app = createApp({
         },
         methods:{
             addTask(){
-                if(this.esercizio.lenght >= 3 ){
-                    this.lista.unshift(this.esercizio);
+                if(this.esercizio.length >= 3 ){
+                    this.lista.unshift({testo: this.esercizio, done: false });
                     this.hasError = false;
                 } else {
                     this.hasError = true;
@@ -60,4 +60,4 @@ const app = createApp({
 app.mount("#app");
 
 
-
+/* .splice */ //per togliere gli elementi che non mi servono usare questo
